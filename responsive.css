@@ -1,0 +1,283 @@
+/* ============================================
+   BSCS Website — Responsive Styles
+   ============================================ */
+
+@media (max-width: 1024px) {
+    .hero .container {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+        text-align: center;
+    }
+
+    .hero-subtitle {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-cta {
+        justify-content: center;
+    }
+
+    .hero-stats {
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    .hero-visual {
+        display: none;
+    }
+
+    .skills-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .stats-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .charts-row {
+        grid-template-columns: 1fr;
+    }
+
+    .about-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .about-card.main-card {
+        grid-column: span 2;
+        grid-row: span 1;
+    }
+
+    .about-card.wide-card {
+        grid-column: span 2;
+    }
+
+    .testimonial-card {
+        min-width: calc(100% - 0.75rem);
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-menu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 80%;
+        max-width: 320px;
+        height: 100vh;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 5rem 1.5rem 2rem;
+        background: var(--bg-primary);
+        border-left: 1px solid var(--border-color);
+        transition: right 0.3s ease;
+        z-index: 150;
+        gap: 0.5rem;
+    }
+
+    .nav-menu.active {
+        right: 0;
+    }
+
+    .nav-link {
+        width: 100%;
+        padding: 0.75rem 1rem;
+        font-size: 1rem;
+    }
+
+    .hamburger {
+        display: flex;
+        z-index: 200;
+    }
+
+    .nav-cta {
+        display: none;
+    }
+
+    .hero {
+        padding: 7rem 0 3rem;
+    }
+
+    .hero-stats {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .about-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .about-card.main-card,
+    .about-card.wide-card {
+        grid-column: span 1;
+    }
+
+    .pillars-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .timeline-track {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .timeline-track::before {
+        display: none;
+    }
+
+    .timeline-item {
+        text-align: left;
+        display: flex;
+        gap: 1rem;
+        align-items: flex-start;
+    }
+
+    .timeline-dot {
+        margin: 0;
+        flex-shrink: 0;
+        margin-top: 0.25rem;
+    }
+
+    .circular-charts {
+        justify-content: flex-start;
+    }
+
+    .stats-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+
+    .footer-brand {
+        grid-column: span 2;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+    }
+
+    .roadmap-nav {
+        padding: 0.75rem;
+    }
+
+    .roadmap-btn {
+        padding: 0.6rem 1rem;
+        font-size: 0.8rem;
+    }
+
+    .semester-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+
+    .course-item {
+        grid-template-columns: 60px 1fr 35px;
+        gap: 0.75rem;
+        padding: 0.875rem 1rem;
+    }
+
+    .subjects-grid,
+    .careers-grid,
+    .projects-grid,
+    .resources-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .stack-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .languages-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 0 1rem;
+    }
+
+    .section {
+        padding: var(--space-xl) 0;
+    }
+
+    .hero-title {
+        font-size: 2rem;
+    }
+
+    .hero-badge {
+        font-size: 0.75rem;
+    }
+
+    .hero-cta {
+        flex-direction: column;
+    }
+
+    .btn-lg {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .hero-stats {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.75rem;
+    }
+
+    .stat-number {
+        font-size: 1.25rem;
+    }
+
+    .section-title {
+        font-size: 1.75rem;
+    }
+
+    .languages-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .testimonial-card {
+        padding: 1.5rem;
+    }
+
+    .contact-form-wrap {
+        padding: 1.5rem;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-brand {
+        grid-column: span 1;
+    }
+
+    .chart-wrap {
+        height: 220px;
+    }
+
+    .pillars-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .soft-skill-tags {
+        gap: 0.35rem;
+    }
+
+    .soft-tag {
+        padding: 0.4rem 0.75rem;
+        font-size: 0.75rem;
+    }
+}
