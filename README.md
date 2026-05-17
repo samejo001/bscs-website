@@ -68,7 +68,7 @@ BSCS-Website/
 
 ### 1. Clone or Download
 ```bash
-git clone https://github.com/yourusername/bscs-website.git
+git clone https://github.com/samejo001/bscs-website.git
 cd bscs-website
 ```
 
