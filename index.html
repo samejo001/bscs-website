@@ -1,0 +1,1913 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BSCS — Bachelor of Science in Computer Science</title>
+    <meta name="description" content="Premium BSCS program website. Explore subjects, skills, careers, and resources for Computer Science students.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+<!-- Loading Screen -->
+<div class="loading-screen" id="loadingScreen">
+    <div class="loader">
+        <div class="loader-ring"></div>
+        <div class="loader-text">BSCS</div>
+    </div>
+</div>
+
+<!-- Scroll Progress Bar -->
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<!-- Navigation -->
+<nav class="navbar" id="navbar">
+    <div class="nav-container">
+        <a href="#" class="nav-logo">
+            <i data-lucide="cpu"></i>
+            <span>BSCS</span>
+        </a>
+        <ul class="nav-menu" id="navMenu">
+            <li><a href="#hero" class="nav-link active">Home</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#subjects" class="nav-link">Subjects</a></li>
+            <li><a href="#roadmap" class="nav-link">Roadmap</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#careers" class="nav-link">Careers</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#resources" class="nav-link">Resources</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="nav-actions">
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                <i data-lucide="sun" class="theme-icon-light"></i>
+                <i data-lucide="moon" class="theme-icon-dark"></i>
+            </button>
+            <a href="#contact" class="btn btn-primary nav-cta">Apply Now</a>
+            <button class="hamburger" id="hamburger" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero" id="hero">
+    <div class="hero-bg">
+        <div class="gradient-orb orb-1"></div>
+        <div class="gradient-orb orb-2"></div>
+        <div class="gradient-orb orb-3"></div>
+        <div class="grid-overlay"></div>
+    </div>
+    <div class="container">
+        <div class="hero-content">
+            <div class="hero-badge">
+                <i data-lucide="award"></i>
+                <span>World-Class Computer Science Program</span>
+            </div>
+            <h1 class="hero-title">
+                <span class="typing-text" id="typingText"></span>
+                <span class="cursor">|</span>
+            </h1>
+            <p class="hero-subtitle">
+                Master algorithms, build intelligent systems, and shape the future of technology 
+                with our comprehensive Bachelor of Science in Computer Science.
+            </p>
+            <div class="hero-cta">
+                <a href="#roadmap" class="btn btn-primary btn-lg">
+                    <span>Explore Curriculum</span>
+                    <i data-lucide="arrow-right"></i>
+                </a>
+                <a href="#projects" class="btn btn-outline btn-lg">
+                    <i data-lucide="play-circle"></i>
+                    <span>View Projects</span>
+                </a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <div class="stat-number" data-count="12000">0</div>
+                    <div class="stat-label">Students Enrolled</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-count="85">0</div>
+                    <div class="stat-label">Core Courses</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-count="96">0</div>
+                    <div class="stat-label">% Placement Rate</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-count="150">0</div>
+                    <div class="stat-label">Industry Partners</div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="code-window">
+                <div class="code-header">
+                    <div class="code-dots">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="code-title">bscs_program.py</div>
+                </div>
+                <pre class="code-body"><code><span class="code-keyword">class</span> <span class="code-class">BSCSStudent</span>:
+    <span class="code-keyword">def</span> <span class="code-function">__init__</span>(<span class="code-param">self</span>, name):
+        <span class="code-param">self</span>.name = name
+        <span class="code-param">self</span>.skills = []
+        <span class="code-param">self</span>.passion = <span class="code-string">"infinite"</span>
+
+    <span class="code-keyword">def</span> <span class="code-function">learn</span>(<span class="code-param">self</span>, subject):
+        <span class="code-param">self</span>.skills.append(subject)
+        <span class="code-keyword">return</span> <span class="code-string">f"Mastered {subject}!"</span>
+
+    <span class="code-keyword">def</span> <span class="code-function">build_future</span>(<span class="code-param">self</span>):
+        <span class="code-keyword">return</span> <span class="code-string">"Success"</span></code></pre>
+            </div>
+            <div class="floating-cards">
+                <div class="float-card float-card-1">
+                    <i data-lucide="brain"></i>
+                    <span>AI & ML</span>
+                </div>
+                <div class="float-card float-card-2">
+                    <i data-lucide="globe"></i>
+                    <span>Full Stack</span>
+                </div>
+                <div class="float-card float-card-3">
+                    <i data-lucide="shield"></i>
+                    <span>CyberSec</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- About BSCS Section -->
+<section class="about section" id="about">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-tag">About Program</span>
+            <h2 class="section-title">What is <span class="text-gradient">BSCS?</span></h2>
+            <p class="section-desc">A comprehensive four-year degree designed to build world-class computer scientists.</p>
+        </div>
+        <div class="about-grid">
+            <div class="about-card main-card">
+                <div class="card-icon">
+                    <i data-lucide="graduation-cap"></i>
+                </div>
+                <h3>Degree Overview</h3>
+                <p>The Bachelor of Science in Computer Science (BSCS) is a rigorous four-year program combining theoretical foundations with practical software engineering skills.</p>
+                <div class="about-meta">
+                    <div class="meta-item">
+                        <span class="meta-value">4 Years</span>
+                        <span class="meta-label">Duration</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-value">8 Semesters</span>
+                        <span class="meta-label">Structure</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-value">136 Credits</span>
+                        <span class="meta-label">Total</span>
+                    </div>
+                </div>
+            </div>
+            <div class="about-card">
+                <div class="card-icon">
+                    <i data-lucide="target"></i>
+                </div>
+                <h3>Mission</h3>
+                <p>To produce graduates who can design, develop, and analyze complex computing systems while adapting to emerging technologies.</p>
+            </div>
+            <div class="about-card">
+                <div class="card-icon">
+                    <i data-lucide="eye"></i>
+                </div>
+                <h3>Vision</h3>
+                <p>To be a leading center of excellence in computer science education, research, and innovation recognized globally.</p>
+            </div>
+            <div class="about-card wide-card">
+                <div class="card-icon">
+                    <i data-lucide="layers"></i>
+                </div>
+                <h3>Core Pillars</h3>
+                <div class="pillars-grid">
+                    <div class="pillar">
+                        <i data-lucide="code-2"></i>
+                        <span>Programming</span>
+                    </div>
+                    <div class="pillar">
+                        <i data-lucide="database"></i>
+                        <span>Data Systems</span>
+                    </div>
+                    <div class="pillar">
+                        <i data-lucide="network"></i>
+                        <span>Networking</span>
+                    </div>
+                    <div class="pillar">
+                        <i data-lucide="cpu"></i>
+                        <span>Architecture</span>
+                    </div>
+                    <div class="pillar">
+                        <i data-lucide="brain-circuit"></i>
+                        <span>Intelligence</span>
+                    </div>
+                    <div class="pillar">
+                        <i data-lucide="lock"></i>
+                        <span>Security</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="timeline">
+            <h3 class="timeline-title">Academic Journey</h3>
+            <div class="timeline-track">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-year">Year 1</span>
+                        <h4>Foundations</h4>
+                        <p>Programming basics, discrete math, calculus, and digital logic.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-year">Year 2</span>
+                        <h4>Core Computer Science</h4>
+                        <p>Data structures, algorithms, OOP, databases, and computer architecture.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-year">Year 3</span>
+                        <h4>Specialization</h4>
+                        <p>AI, web development, software engineering, networking, and OS.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-year">Year 4</span>
+                        <h4>Capstone & Career</h4>
+                        <p>Final project, internships, research, and industry placement.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Subjects Section -->
+<section class="subjects section" id="subjects">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-tag">Curriculum</span>
+            <h2 class="section-title">Core <span class="text-gradient">Subjects</span></h2>
+            <p class="section-desc">Comprehensive coverage of modern computer science disciplines.</p>
+        </div>
+        <div class="subjects-search">
+            <i data-lucide="search"></i>
+            <input type="text" id="subjectSearch" placeholder="Search subjects...">
+        </div>
+        <div class="subjects-grid" id="subjectsGrid">
+            <div class="subject-card" data-category="programming">
+                <div class="subject-header">
+                    <div class="subject-icon">
+                        <i data-lucide="code-2"></i>
+                    </div>
+                    <span class="subject-tag">Core</span>
+                </div>
+                <h3>Programming Fundamentals</h3>
+                <p>Learn C++, Java, and Python syntax, control structures, functions, and object-oriented programming concepts.</p>
+                <div class="subject-footer">
+                    <span class="subject-credits">4 Credits</span>
+                    <span class="subject-level">Beginner</span>
+                </div>
+            </div>
+            <div class="subject-card" data-category="data">
+                <div class="subject-header">
+                    <div class="subject-icon">
+                        <i data-lucide="git-branch"></i>
+                    </div>
+                    <span class="subject-tag">Core</span>
+                </div>
+                <h3>Data Structures</h3>
+                <p>Arrays, linked lists, stacks, queues, trees, graphs, hash tables, and their real-world applications.</p>
+                <div class="subject-footer">
+                    <span class="subject-credits">4 Credits</span>
+                    <span class="subject-level">Intermediate</span>
+                </div>
+            </div>
+            <div class="subject-card" data-category="algorithms">
+                <div class="subject-header">
+                    <div class="subject-icon">
+                        <i data-lucide="workflow"></i>
+                    </div>
+                    <span class="subject-tag">Core</span>
+                </div>
+                <h3>Algorithms</h3>
+                <p>Sorting, searching, dynamic programming, greedy algorithms, graph algorithms, and complexity analysis.</p>
+                <div class="subject-footer">
+                    <span class="subject-credits">4 Credits</span>
+                    <span class="subject-level">Advanced</span>
+                </div>
+            </div>
+            <div class="subject-card" data-category="data">
+                <div class="subject-header">
+                    <div class="subject-icon">
+                        <i data-lucide="database"></i>
+                    </div>
+                    <span class="subject-tag">Core</span>
+                </div>
+                <h3>Database Systems</h3>
+                <p>Relational models, SQL, normalization, transactions, indexing, NoSQL databases, and data warehousing.</p>
+                <div class="subject-footer">
+                    <span class="subject-credits">3 Credits</span>
+                    <span class="subject-level">Intermediate</span>
+                </div>
+            </div>
+            <div class="subject-card" data-category="ai">
+                <div class="subject-header">
+                    <div class="subject-icon">
+                        <i data-lucide="brain"></i>
+                    </div>
+                    <span class="subject-tag">Elective</span>
+                </div>
+                <h3>Artificial Intelligence</h3>
+                <p>Search algorithms, knowledge representation, planning, NLP fundamentals, and expert systems.</p>
+                <div class="subject-footer">
+                    <span class="subject-credits">3 Credits</span>
+                    <span class="subject-level">Advanced</span>
+                </div>
+            </div>
+            <div class="subject-card" data-category="web">
+                <div class="subject-header">
+                    <div class="subject-icon">
+                        <i data-lucide="globe"></i>
+                    </div>
+                    <span class="subject-tag">Elective</span>
+                </div>
+                <h3>Web Development</h3>
+                <p>HTML5, CSS3, JavaScript, React, Node.js, REST APIs, responsive design, and deployment strategies.</p>
+                <div class="subject-footer">
+                    <span class="subject-credits">3 Credits</span>
+                    <span class="subject-level">Intermediate</span>
+                </div>
+            </div>
+            <div class="subject-card" data-category="networking">
+                <div class="subject-header">
+                    <div class="subject-icon">
+                        <i data-lucide="network"></i>
+                    </div>
+                    <span class="subject-tag">Core</span>
+                </div>
+                <h3>Computer Networks</h3>
+                <p>OSI model, TCP/IP, routing, switching, wireless networks, network security, and cloud networking.</p>
+                <div class="subject-footer">
+                    <span class="subject-credits">3 Credits</span>
+                    <span class="subject-level">Intermediate</span>
+                </div>
+            </div>
+            <div class="subject-card" data-category="security">
+                <div class="subject-header">
+                    <div class="subject-icon">
+                        <i data-lucide="shield"></i>
+                    </div>
+                    <span class="subject-tag">Elective</span>
+                </div>
+                <h3>Cybersecurity</h3>
+                <p>Cryptography, ethical hacking, penetration testing, secure coding, threat analysis, and compliance.</p>
+                <div class="subject-footer">
+                    <span class="subject-credits">3 Credits</span>
+                    <span class="subject-level">Advanced</span>
+                </div>
+            </div>
+            <div class="subject-card" data-category="software">
+                <div class="subject-header">
+                    <div class="subject-icon">
+                        <i data-lucide="box"></i>
+                    </div>
+                    <span class="subject-tag">Core</span>
+                </div>
+                <h3>Software Engineering</h3>
+                <p>SDLC, Agile, Scrum, design patterns, testing, CI/CD, requirements engineering, and project management.</p>
+                <div class="subject-footer">
+                    <span class="subject-credits">3 Credits</span>
+                    <span class="subject-level">Intermediate</span>
+                </div>
+            </div>
+            <div class="subject-card" data-category="systems">
+                <div class="subject-header">
+                    <div class="subject-icon">
+                        <i data-lucide="monitor"></i>
+                    </div>
+                    <span class="subject-tag">Core</span>
+                </div>
+                <h3>Operating Systems</h3>
+                <p>Process management, memory management, file systems, concurrency, virtualization, and Linux internals.</p>
+                <div class="subject-footer">
+                    <span class="subject-credits">3 Credits</span>
+                    <span class="subject-level">Advanced</span>
+                </div>
+            </div>
+            <div class="subject-card" data-category="ai">
+                <div class="subject-header">
+                    <div class="subject-icon">
+                        <i data-lucide="brain-circuit"></i>
+                    </div>
+                    <span class="subject-tag">Elective</span>
+                </div>
+                <h3>Machine Learning</h3>
+                <p>Supervised/unsupervised learning, neural networks, deep learning, TensorFlow, PyTorch, and model deployment.</p>
+                <div class="subject-footer">
+                    <span class="subject-credits">3 Credits</span>
+                    <span class="subject-level">Advanced</span>
+                </div>
+            </div>
+            <div class="subject-card" data-category="cloud">
+                <div class="subject-header">
+                    <div class="subject-icon">
+                        <i data-lucide="cloud"></i>
+                    </div>
+                    <span class="subject-tag">Elective</span>
+                </div>
+                <h3>Cloud Computing</h3>
+                <p>AWS/Azure/GCP, serverless architecture, microservices, containers, Docker, Kubernetes, and DevOps.</p>
+                <div class="subject-footer">
+                    <span class="subject-credits">3 Credits</span>
+                    <span class="subject-level">Intermediate</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Semester Roadmap -->
+<section class="roadmap section" id="roadmap">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-tag">Academic Plan</span>
+            <h2 class="section-title">Semester <span class="text-gradient">Roadmap</span></h2>
+            <p class="section-desc">Your four-year journey from fundamentals to expertise.</p>
+        </div>
+        <div class="roadmap-container">
+            <div class="roadmap-nav">
+                <button class="roadmap-btn active" data-sem="1">Sem 1</button>
+                <button class="roadmap-btn" data-sem="2">Sem 2</button>
+                <button class="roadmap-btn" data-sem="3">Sem 3</button>
+                <button class="roadmap-btn" data-sem="4">Sem 4</button>
+                <button class="roadmap-btn" data-sem="5">Sem 5</button>
+                <button class="roadmap-btn" data-sem="6">Sem 6</button>
+                <button class="roadmap-btn" data-sem="7">Sem 7</button>
+                <button class="roadmap-btn" data-sem="8">Sem 8</button>
+            </div>
+            <div class="roadmap-content" id="roadmapContent">
+                <div class="semester-panel active" data-panel="1">
+                    <div class="semester-header">
+                        <h3>Semester 1 — Foundation</h3>
+                        <span class="semester-credits">18 Credits</span>
+                    </div>
+                    <div class="semester-courses">
+                        <div class="course-item">
+                            <span class="course-code">CS101</span>
+                            <span class="course-name">Introduction to Computing</span>
+                            <span class="course-credit">3</span>
+                        </div>
+                        <div class="course-item">
+                            <span class="course-code">CS102</span>
+                            <span class="course-name">Programming Fundamentals (C++)</span>
+                            <span class="course-credit">4</span>
+                        </div>
+                        <div class="course-item">
+                            <span class="course-code">MT101</span>
+                            <span class="course-name">Calculus & Analytic Geometry</span>
+                            <span class="course-credit">3</span>
+                        </div>
+                        <div class="course-item">
+                            <span class="course-code">MT102</span>
+                            <span class="course-name">Discrete Mathematics</span>
+                            <span class="course-credit">3</span>
+                        </div>
+                        <div class="course-item">
+                            <span class="course-code">EL101</span>
+                            <span class="course-name">Digital Logic Design</span>
+                            <span class="course-credit">3</span>
+                        </div>
+                        <div class="course-item">
+                            <span class="course-code">EN101</span>
+                            <span class="course-name">English Composition</span>
+                            <span class="course-credit">2</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="semester-panel" data-panel="2">
+                    <div class="semester-header">
+                        <h3>Semester 2 — Programming Deep Dive</h3>
+                        <span class="semester-credits">18 Credits</span>
+                    </div>
+                    <div class="semester-courses">
+                        <div class="course-item">
+                            <span class="course-code">CS103</span>
+                            <span class="course-name">Object-Oriented Programming (Java)</span>
+                            <span class="course-credit">4</span>
+                        </div>
+                        <div class="course-item">
+                            <span class="course-code">CS104</span>
+                            <span class="course-name">Data Structures & Algorithms</span>
+                            <span class="course-credit">4</span>
+                        </div>
+                        <div class="course-item">
+                            <span class="course-code">MT201</span>
+                            <span class="course-name">Linear Algebra</span>
+                            <span class="course-credit">3</span>
+                        </div>
+                        <div class="course-item">
+                            <span class="course-code">EL102</span>
+                            <span class="course-name">Computer Organization</span>
+                            <span class="course-credit">3</span>
+                        </div>
+                        <div class="course-item">
+                            <span class="course-code">SS101</span>
+                            <span class="course-name">Pakistan Studies</span>
+                            <span class="course-credit">2</span>
+                        </div>
+                        <div class="course-item">
+                            <span class="course-code">SS102</span>
+                            <span class="course-name">Islamic Studies / Ethics</span>
+                            <span class="course-credit">2</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="semester-panel" data-panel="3">
+                    <div class="semester-header">
+                        <h3>Semester 3 — Core CS</h3>
+                        <span class="semester-credits">18 Credits</span>
+                    </div>
+                    <div class="semester-courses">
+                        <div class="course-item">
+                            <span class="course-code">CS201</span>
+                            <span class="course-name">Advanced Algorithms</span>
+                            <span class="course-credit">3</span>
+                        </div>
+                        <div class="course-item">
+                            <span class="course-code">CS202</span>
+                            <span class="course-name">Database Systems</span>
+                            <span class="course-credit">3</span>
+                        </div>
+                        <div class="course-item">
+                            <span class="course-code">CS203</span>
+                            <span class="course-name">Software Engineering</span>
+                            <span class="course-credit">3</span>
+                        </div>
+                        <div class="course-item">
+                            <span class="course-code">CS204</span>
+                            <span class="course-name">Operating Systems</span>
+                            <span class="course-credit">3</span>
+                        </div>
+                        <div class="course-item">
+                            <span class="course-code">MT301</span>
+                            <span class="course-name">Probability & Statistics</span>
+                            <span class="course-credit">3</span>
+                        </div>
+                        <div class="course-item">
+                            <span class="course-code">CS205</span>
+                            <span class="course-name">Web Technologies</span>
+                            <span class="course-credit">3</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="semester-panel" data-panel="4">
+                    <div class="semester-header">
+                        <h3>Semester 4 — Systems & Networks</h3>
+                        <span class="semester-credits">18 Credits</span>
+                    </div>
+                    <div class="semester-courses">
+                        <div class="course-item">
+                            <span class="course-code">CS301</span>
+                            <span class="course-name">Computer Networks</span>
+                            <span class="course-credit">3</span>
+                        </div>
+                        <div class="course-item">
+                            <span class="course-code">CS302</span>
+                            <span class="course-name">Information Security</span>
+                            <span class="course-credit">3</span>
+                        </div>
+                        <div class="course-item">
+                            <span class="course-code">CS303</span>
+                            <span class="course-name">Theory of Automata</span>
+                            <span class="course-credit">3</span>
+                        </div>
+                        <div class="course-item">
+                            <span class="course-code">CS304</span>
+                            <span class="course-name">Human-Computer Interaction</span>
+                            <span class="course-credit">3</span>
+                        </div>
+                        <div class="course-item">
+                            <span class="course-code">CS305</span>
+                            <span class="course-name">Mobile Application Development</span>
+                            <span class="course-credit">3</span>
+                        </div>
+                        <div class="course-item">
+                            <span class="course-code">EL201</span>
+                            <span class="course-name">Microprocessor & Assembly</span>
+                            <span class="course-credit">3</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="semester-panel" data-panel="5">
+                    <div class="semester-header">
+                        <h3>Semester 5 — AI & Data</h3>
+                        <span class="semester-credits">17 Credits</span>
+                    </div>
+                    <div class="semester-courses">
+                        <div class="course-item">
+                            <span class="course-code">CS401</span>
+                            <span class="course-name">Artificial Intelligence</span>
+                            <span class="course-credit">3</span>
+                        </div>
+                        <div class="course-item">
+                            <span class="course-code">CS402</span>
+                            <span class="course-name">Machine Learning</span>
+                            <span class="course-credit">3</span>
+                        </div>
+                        <div class="course-item">
+                            <span class="course-code">CS403</span>
+                            <span class="course-name">Data Science Fundamentals</span>
+                            <span class="course-credit">3</span>
+                        </div>
+                        <div class="course-item">
+                            <span class="course-code">CS404</span>
+                            <span class="course-name">Compiler Construction</span>
+                            <span class="course-credit">3</span>
+                        </div>
+                        <div class="course-item">
+                            <span class="course-code">CS405</span>
+                            <span class="course-name">Computer Graphics</span>
+                            <span class="course-credit">3</span>
+                        </div>
+                        <div class="course-item">
+                            <span class="course-code">MG301</span>
+                            <span class="course-name">Project Management</span>
+                            <span class="course-credit">2</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="semester-panel" data-panel="6">
+                    <div class="semester-header">
+                        <h3>Semester 6 — Advanced Topics</h3>
+                        <span class="semester-credits">17 Credits</span>
+                    </div>
+                    <div class="semester-courses">
+                        <div class="course-item">
+                            <span class="course-code">CS501</span>
+                            <span class="course-name">Deep Learning</span>
+                            <span class="course-credit">3</span>
+                        </div>
+                        <div class="course-item">
+                            <span class="course-code">CS502</span>
+                            <span class="course-name">Cloud Computing</span>
+                            <span class="course-credit">3</span>
+                        </div>
+                        <div class="course-item">
+                            <span class="course-code">CS503</span>
+                            <span class="course-name">Distributed Systems</span>
+                            <span class="course-credit">3</span>
+                        </div>
+                        <div class="course-item">
+                            <span class="course-code">CS504</span>
+                            <span class="course-name">Natural Language Processing</span>
+                            <span class="course-credit">3</span>
+                        </div>
+                        <div class="course-item">
+                            <span class="course-code">CS505</span>
+                            <span class="course-name">DevOps & CI/CD</span>
+                            <span class="course-credit">2</span>
+                        </div>
+                        <div class="course-item">
+                            <span class="course-code">CS506</span>
+                            <span class="course-name">Research Methods</span>
+                            <span class="course-credit">3</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="semester-panel" data-panel="7">
+                    <div class="semester-header">
+                        <h3>Semester 7 — Specialization</h3>
+                        <span class="semester-credits">16 Credits</span>
+                    </div>
+                    <div class="semester-courses">
+                        <div class="course-item">
+                            <span class="course-code">CS601</span>
+                            <span class="course-name">Cybersecurity Advanced</span>
+                            <span class="course-credit">3</span>
+                        </div>
+                        <div class="course-item">
+                            <span class="course-code">CS602</span>
+                            <span class="course-name">Blockchain & Web3</span>
+                            <span class="course-credit">3</span>
+                        </div>
+                        <div class="course-item">
+                            <span class="course-code">CS603</span>
+                            <span class="course-name">IoT & Embedded Systems</span>
+                            <span class="course-credit">3</span>
+                        </div>
+                        <div class="course-item">
+                            <span class="course-code">CS604</span>
+                            <span class="course-name">Elective I</span>
+                            <span class="course-credit">3</span>
+                        </div>
+                        <div class="course-item">
+                            <span class="course-code">CS605</span>
+                            <span class="course-name">Elective II</span>
+                            <span class="course-credit">3</span>
+                        </div>
+                        <div class="course-item">
+                            <span class="course-code">CS606</span>
+                            <span class="course-name">Final Year Project I</span>
+                            <span class="course-credit">1</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="semester-panel" data-panel="8">
+                    <div class="semester-header">
+                        <h3>Semester 8 — Capstone</h3>
+                        <span class="semester-credits">16 Credits</span>
+                    </div>
+                    <div class="semester-courses">
+                        <div class="course-item">
+                            <span class="course-code">CS701</span>
+                            <span class="course-name">Final Year Project II</span>
+                            <span class="course-credit">6</span>
+                        </div>
+                        <div class="course-item">
+                            <span class="course-code">CS702</span>
+                            <span class="course-name">Professional Practices</span>
+                            <span class="course-credit">2</span>
+                        </div>
+                        <div class="course-item">
+                            <span class="course-code">CS703</span>
+                            <span class="course-name">Entrepreneurship</span>
+                            <span class="course-credit">2</span>
+                        </div>
+                        <div class="course-item">
+                            <span class="course-code">CS704</span>
+                            <span class="course-name">Elective III</span>
+                            <span class="course-credit">3</span>
+                        </div>
+                        <div class="course-item">
+                            <span class="course-code">CS705</span>
+                            <span class="course-name">Internship / Research</span>
+                            <span class="course-credit">3</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Skills Section -->
+<section class="skills section" id="skills">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-tag">Competencies</span>
+            <h2 class="section-title">Skills <span class="text-gradient">Matrix</span></h2>
+            <p class="section-desc">Technical and professional skills you will master.</p>
+        </div>
+        <div class="skills-layout">
+            <div class="skills-main">
+                <h3 class="skills-subtitle">Technical Skills</h3>
+                <div class="skill-bars">
+                    <div class="skill-bar">
+                        <div class="skill-info">
+                            <span>Programming & Problem Solving</span>
+                            <span>95%</span>
+                        </div>
+                        <div class="skill-progress">
+                            <div class="skill-fill" style="width: 95%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-info">
+                            <span>Data Structures & Algorithms</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="skill-progress">
+                            <div class="skill-fill" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-info">
+                            <span>Database Design & SQL</span>
+                            <span>88%</span>
+                        </div>
+                        <div class="skill-progress">
+                            <div class="skill-fill" style="width: 88%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-info">
+                            <span>Web Development</span>
+                            <span>92%</span>
+                        </div>
+                        <div class="skill-progress">
+                            <div class="skill-fill" style="width: 92%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-info">
+                            <span>Artificial Intelligence</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="skill-progress">
+                            <div class="skill-fill" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-info">
+                            <span>Software Engineering</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="skill-progress">
+                            <div class="skill-fill" style="width: 90%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="skills-side">
+                <div class="circular-charts">
+                    <div class="circular-chart">
+                        <div class="circular-progress" data-percent="94">
+                            <svg viewBox="0 0 120 120">
+                                <circle class="circular-bg" cx="60" cy="60" r="52"></circle>
+                                <circle class="circular-bar" cx="60" cy="60" r="52"></circle>
+                            </svg>
+                            <div class="circular-text">
+                                <span class="circular-value">0</span>
+                                <span class="circular-label">%</span>
+                            </div>
+                        </div>
+                        <span class="circular-title">Placement Rate</span>
+                    </div>
+                    <div class="circular-chart">
+                        <div class="circular-progress" data-percent="85">
+                            <svg viewBox="0 0 120 120">
+                                <circle class="circular-bg" cx="60" cy="60" r="52"></circle>
+                                <circle class="circular-bar" cx="60" cy="60" r="52"></circle>
+                            </svg>
+                            <div class="circular-text">
+                                <span class="circular-value">0</span>
+                                <span class="circular-label">%</span>
+                            </div>
+                        </div>
+                        <span class="circular-title">Skill Mastery</span>
+                    </div>
+                </div>
+                <div class="soft-skills">
+                    <h3>Professional Skills</h3>
+                    <div class="soft-skill-tags">
+                        <span class="soft-tag">Communication</span>
+                        <span class="soft-tag">Team Leadership</span>
+                        <span class="soft-tag">Critical Thinking</span>
+                        <span class="soft-tag">Agile Methodology</span>
+                        <span class="soft-tag">Problem Solving</span>
+                        <span class="soft-tag">Time Management</span>
+                        <span class="soft-tag">Adaptability</span>
+                        <span class="soft-tag">Creativity</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Career Opportunities -->
+<section class="careers section" id="careers">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-tag">Future Paths</span>
+            <h2 class="section-title">Career <span class="text-gradient">Opportunities</span></h2>
+            <p class="section-desc">High-demand roles BSCS graduates excel in.</p>
+        </div>
+        <div class="careers-grid">
+            <div class="career-card">
+                <div class="career-icon">
+                    <i data-lucide="layout"></i>
+                </div>
+                <h3>Web Developer</h3>
+                <p>Build modern, responsive, and scalable web applications using cutting-edge frameworks.</p>
+                <div class="career-stats">
+                    <div class="career-stat">
+                        <span class="career-value">$75K - $130K</span>
+                        <span class="career-label">Salary Range</span>
+                    </div>
+                    <div class="career-stat">
+                        <span class="career-value">+23%</span>
+                        <span class="career-label">Growth</span>
+                    </div>
+                </div>
+            </div>
+            <div class="career-card">
+                <div class="career-icon">
+                    <i data-lucide="code"></i>
+                </div>
+                <h3>Software Engineer</h3>
+                <p>Design and develop robust software systems for enterprise and consumer products.</p>
+                <div class="career-stats">
+                    <div class="career-stat">
+                        <span class="career-value">$85K - $160K</span>
+                        <span class="career-label">Salary Range</span>
+                    </div>
+                    <div class="career-stat">
+                        <span class="career-value">+25%</span>
+                        <span class="career-label">Growth</span>
+                    </div>
+                </div>
+            </div>
+            <div class="career-card">
+                <div class="career-icon">
+                    <i data-lucide="brain"></i>
+                </div>
+                <h3>AI Engineer</h3>
+                <p>Develop intelligent systems, NLP models, computer vision, and autonomous agents.</p>
+                <div class="career-stats">
+                    <div class="career-stat">
+                        <span class="career-value">$100K - $200K</span>
+                        <span class="career-label">Salary Range</span>
+                    </div>
+                    <div class="career-stat">
+                        <span class="career-value">+35%</span>
+                        <span class="career-label">Growth</span>
+                    </div>
+                </div>
+            </div>
+            <div class="career-card">
+                <div class="career-icon">
+                    <i data-lucide="bar-chart-3"></i>
+                </div>
+                <h3>Data Scientist</h3>
+                <p>Analyze complex datasets, build predictive models, and extract actionable insights.</p>
+                <div class="career-stats">
+                    <div class="career-stat">
+                        <span class="career-value">$95K - $180K</span>
+                        <span class="career-label">Salary Range</span>
+                    </div>
+                    <div class="career-stat">
+                        <span class="career-value">+28%</span>
+                        <span class="career-label">Growth</span>
+                    </div>
+                </div>
+            </div>
+            <div class="career-card">
+                <div class="career-icon">
+                    <i data-lucide="shield-check"></i>
+                </div>
+                <h3>Cybersecurity Analyst</h3>
+                <p>Protect organizations from cyber threats, conduct audits, and build secure systems.</p>
+                <div class="career-stats">
+                    <div class="career-stat">
+                        <span class="career-value">$80K - $150K</span>
+                        <span class="career-label">Salary Range</span>
+                    </div>
+                    <div class="career-stat">
+                        <span class="career-value">+33%</span>
+                        <span class="career-label">Growth</span>
+                    </div>
+                </div>
+            </div>
+            <div class="career-card">
+                <div class="career-icon">
+                    <i data-lucide="cloud-cog"></i>
+                </div>
+                <h3>Cloud Engineer</h3>
+                <p>Architect, deploy, and manage cloud infrastructure on AWS, Azure, and Google Cloud.</p>
+                <div class="career-stats">
+                    <div class="career-stat">
+                        <span class="career-value">$90K - $170K</span>
+                        <span class="career-label">Salary Range</span>
+                    </div>
+                    <div class="career-stat">
+                        <span class="career-value">+27%</span>
+                        <span class="career-label">Growth</span>
+                    </div>
+                </div>
+            </div>
+            <div class="career-card">
+                <div class="career-icon">
+                    <i data-lucide="palette"></i>
+                </div>
+                <h3>UI/UX Designer</h3>
+                <p>Create intuitive user experiences, wireframes, prototypes, and design systems.</p>
+                <div class="career-stats">
+                    <div class="career-stat">
+                        <span class="career-value">$70K - $130K</span>
+                        <span class="career-label">Salary Range</span>
+                    </div>
+                    <div class="career-stat">
+                        <span class="career-value">+18%</span>
+                        <span class="career-label">Growth</span>
+                    </div>
+                </div>
+            </div>
+            <div class="career-card">
+                <div class="career-icon">
+                    <i data-lucide="user"></i>
+                </div>
+                <h3>Freelancer</h3>
+                <p>Work independently on diverse projects across the globe with flexible schedules.</p>
+                <div class="career-stats">
+                    <div class="career-stat">
+                        <span class="career-value">$50 - $150/hr</span>
+                        <span class="career-label">Hourly Rate</span>
+                    </div>
+                    <div class="career-stat">
+                        <span class="career-value">+40%</span>
+                        <span class="career-label">Demand</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Programming Languages Section -->
+<section class="languages section" id="languages">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-tag">Languages</span>
+            <h2 class="section-title">Programming <span class="text-gradient">Languages</span></h2>
+            <p class="section-desc">Languages you will master during the program.</p>
+        </div>
+        <div class="languages-grid">
+            <div class="lang-card">
+                <div class="lang-icon" style="--lang-color: #00599C;">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+                    <span class="lang-name">C++</span>
+                </div>
+                <div class="lang-chart">
+                    <canvas id="chartCpp"></canvas>
+                </div>
+                <div class="lang-meta">
+                    <span>Usage: 25%</span>
+                    <span>Difficulty: High</span>
+                </div>
+            </div>
+            <div class="lang-card">
+                <div class="lang-icon" style="--lang-color: #E76F00;">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+                    <span class="lang-name">Java</span>
+                </div>
+                <div class="lang-chart">
+                    <canvas id="chartJava"></canvas>
+                </div>
+                <div class="lang-meta">
+                    <span>Usage: 20%</span>
+                    <span>Difficulty: Medium</span>
+                </div>
+            </div>
+            <div class="lang-card">
+                <div class="lang-icon" style="--lang-color: #3776AB;">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+                    <span class="lang-name">Python</span>
+                </div>
+                <div class="lang-chart">
+                    <canvas id="chartPython"></canvas>
+                </div>
+                <div class="lang-meta">
+                    <span>Usage: 30%</span>
+                    <span>Difficulty: Low</span>
+                </div>
+            </div>
+            <div class="lang-card">
+                <div class="lang-icon" style="--lang-color: #F7DF1E;">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+                    <span class="lang-name">JavaScript</span>
+                </div>
+                <div class="lang-chart">
+                    <canvas id="chartJS"></canvas>
+                </div>
+                <div class="lang-meta">
+                    <span>Usage: 28%</span>
+                    <span>Difficulty: Medium</span>
+                </div>
+            </div>
+            <div class="lang-card">
+                <div class="lang-icon" style="--lang-color: #F29111;">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+                    <span class="lang-name">SQL</span>
+                </div>
+                <div class="lang-chart">
+                    <canvas id="chartSQL"></canvas>
+                </div>
+                <div class="lang-meta">
+                    <span>Usage: 22%</span>
+                    <span>Difficulty: Medium</span>
+                </div>
+            </div>
+            <div class="lang-card">
+                <div class="lang-icon" style="--lang-color: #9B4F96;">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+                    <span class="lang-name">C#</span>
+                </div>
+                <div class="lang-chart">
+                    <canvas id="chartCsharp"></canvas>
+                </div>
+                <div class="lang-meta">
+                    <span>Usage: 15%</span>
+                    <span>Difficulty: Medium</span>
+                </div>
+            </div>
+            <div class="lang-card">
+                <div class="lang-icon" style="--lang-color: #777BB4;">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+                    <span class="lang-name">PHP</span>
+                </div>
+                <div class="lang-chart">
+                    <canvas id="chartPHP"></canvas>
+                </div>
+                <div class="lang-meta">
+                    <span>Usage: 12%</span>
+                    <span>Difficulty: Low</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Technology Stack Section -->
+<section class="techstack section" id="techstack">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-tag">Tools</span>
+            <h2 class="section-title">Technology <span class="text-gradient">Stack</span></h2>
+            <p class="section-desc">Modern tools and technologies used throughout the program.</p>
+        </div>
+        <div class="stack-grid">
+            <div class="stack-category">
+                <div class="stack-header">
+                    <i data-lucide="monitor"></i>
+                    <h3>Frontend</h3>
+                </div>
+                <div class="stack-items">
+                    <span class="stack-item">HTML5</span>
+                    <span class="stack-item">CSS3</span>
+                    <span class="stack-item">JavaScript</span>
+                    <span class="stack-item">React</span>
+                    <span class="stack-item">Vue.js</span>
+                    <span class="stack-item">TailwindCSS</span>
+                    <span class="stack-item">TypeScript</span>
+                    <span class="stack-item">Next.js</span>
+                </div>
+            </div>
+            <div class="stack-category">
+                <div class="stack-header">
+                    <i data-lucide="server"></i>
+                    <h3>Backend</h3>
+                </div>
+                <div class="stack-items">
+                    <span class="stack-item">Node.js</span>
+                    <span class="stack-item">Express</span>
+                    <span class="stack-item">Python</span>
+                    <span class="stack-item">Django</span>
+                    <span class="stack-item">Java</span>
+                    <span class="stack-item">Spring Boot</span>
+                    <span class="stack-item">PHP</span>
+                    <span class="stack-item">Laravel</span>
+                </div>
+            </div>
+            <div class="stack-category">
+                <div class="stack-header">
+                    <i data-lucide="database"></i>
+                    <h3>Databases</h3>
+                </div>
+                <div class="stack-items">
+                    <span class="stack-item">MySQL</span>
+                    <span class="stack-item">PostgreSQL</span>
+                    <span class="stack-item">MongoDB</span>
+                    <span class="stack-item">Redis</span>
+                    <span class="stack-item">SQLite</span>
+                    <span class="stack-item">Firebase</span>
+                </div>
+            </div>
+            <div class="stack-category">
+                <div class="stack-header">
+                    <i data-lucide="cloud"></i>
+                    <h3>Cloud & DevOps</h3>
+                </div>
+                <div class="stack-items">
+                    <span class="stack-item">AWS</span>
+                    <span class="stack-item">Azure</span>
+                    <span class="stack-item">Google Cloud</span>
+                    <span class="stack-item">Docker</span>
+                    <span class="stack-item">Kubernetes</span>
+                    <span class="stack-item">Jenkins</span>
+                    <span class="stack-item">Terraform</span>
+                </div>
+            </div>
+            <div class="stack-category">
+                <div class="stack-header">
+                    <i data-lucide="brain-circuit"></i>
+                    <h3>AI & Data</h3>
+                </div>
+                <div class="stack-items">
+                    <span class="stack-item">TensorFlow</span>
+                    <span class="stack-item">PyTorch</span>
+                    <span class="stack-item">Scikit-learn</span>
+                    <span class="stack-item">Pandas</span>
+                    <span class="stack-item">NumPy</span>
+                    <span class="stack-item">Jupyter</span>
+                    <span class="stack-item">OpenCV</span>
+                </div>
+            </div>
+            <div class="stack-category">
+                <div class="stack-header">
+                    <i data-lucide="git-branch"></i>
+                    <h3>Tools & Workflow</h3>
+                </div>
+                <div class="stack-items">
+                    <span class="stack-item">Git</span>
+                    <span class="stack-item">GitHub</span>
+                    <span class="stack-item">VS Code</span>
+                    <span class="stack-item">Postman</span>
+                    <span class="stack-item">Figma</span>
+                    <span class="stack-item">Jira</span>
+                    <span class="stack-item">Linux</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Projects Showcase -->
+<section class="projects section" id="projects">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-tag">Portfolio</span>
+            <h2 class="section-title">Project <span class="text-gradient">Showcase</span></h2>
+            <p class="section-desc">Real-world projects built by BSCS students.</p>
+        </div>
+        <div class="project-filters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="web">Web</button>
+            <button class="filter-btn" data-filter="ai">AI/ML</button>
+            <button class="filter-btn" data-filter="mobile">Mobile</button>
+            <button class="filter-btn" data-filter="data">Data</button>
+        </div>
+        <div class="projects-grid" id="projectsGrid">
+            <div class="project-card" data-category="ai">
+                <div class="project-image">
+                    <div class="project-placeholder">
+                        <i data-lucide="brain"></i>
+                    </div>
+                    <div class="project-overlay">
+                        <a href="#" class="project-link"><i data-lucide="external-link"></i></a>
+                        <a href="#" class="project-link"><i data-lucide="github"></i></a>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <span class="project-tag">AI/ML</span>
+                    <h3>Smart Health Diagnosis</h3>
+                    <p>An AI-powered system for early disease detection using CNN and medical imaging.</p>
+                    <div class="project-tech">
+                        <span>Python</span>
+                        <span>TensorFlow</span>
+                        <span>Flask</span>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card" data-category="web">
+                <div class="project-image">
+                    <div class="project-placeholder">
+                        <i data-lucide="shopping-cart"></i>
+                    </div>
+                    <div class="project-overlay">
+                        <a href="#" class="project-link"><i data-lucide="external-link"></i></a>
+                        <a href="#" class="project-link"><i data-lucide="github"></i></a>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <span class="project-tag">Web</span>
+                    <h3>E-Commerce Platform</h3>
+                    <p>Full-stack online marketplace with real-time inventory, payments, and admin dashboard.</p>
+                    <div class="project-tech">
+                        <span>React</span>
+                        <span>Node.js</span>
+                        <span>MongoDB</span>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card" data-category="mobile">
+                <div class="project-image">
+                    <div class="project-placeholder">
+                        <i data-lucide="map-pin"></i>
+                    </div>
+                    <div class="project-overlay">
+                        <a href="#" class="project-link"><i data-lucide="external-link"></i></a>
+                        <a href="#" class="project-link"><i data-lucide="github"></i></a>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <span class="project-tag">Mobile</span>
+                    <h3>City Navigator App</h3>
+                    <p>Cross-platform mobile app for public transport routing with AR navigation features.</p>
+                    <div class="project-tech">
+                        <span>Flutter</span>
+                        <span>Firebase</span>
+                        <span>Maps API</span>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card" data-category="data">
+                <div class="project-image">
+                    <div class="project-placeholder">
+                        <i data-lucide="bar-chart-3"></i>
+                    </div>
+                    <div class="project-overlay">
+                        <a href="#" class="project-link"><i data-lucide="external-link"></i></a>
+                        <a href="#" class="project-link"><i data-lucide="github"></i></a>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <span class="project-tag">Data</span>
+                    <h3>Finance Dashboard</h3>
+                    <p>Real-time financial analytics platform with predictive modeling and visualizations.</p>
+                    <div class="project-tech">
+                        <span>Python</span>
+                        <span>Django</span>
+                        <span>PostgreSQL</span>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card" data-category="web">
+                <div class="project-image">
+                    <div class="project-placeholder">
+                        <i data-lucide="video"></i>
+                    </div>
+                    <div class="project-overlay">
+                        <a href="#" class="project-link"><i data-lucide="external-link"></i></a>
+                        <a href="#" class="project-link"><i data-lucide="github"></i></a>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <span class="project-tag">Web</span>
+                    <h3>Video Streaming Service</h3>
+                    <p>Netflix-like streaming platform with adaptive bitrate streaming and recommendation engine.</p>
+                    <div class="project-tech">
+                        <span>Next.js</span>
+                        <span>AWS</span>
+                        <span>Redis</span>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card" data-category="ai">
+                <div class="project-image">
+                    <div class="project-placeholder">
+                        <i data-lucide="message-square"></i>
+                    </div>
+                    <div class="project-overlay">
+                        <a href="#" class="project-link"><i data-lucide="external-link"></i></a>
+                        <a href="#" class="project-link"><i data-lucide="github"></i></a>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <span class="project-tag">AI/ML</span>
+                    <h3>Legal AI Assistant</h3>
+                    <p>NLP-based chatbot for legal document analysis and case law research automation.</p>
+                    <div class="project-tech">
+                        <span>Python</span>
+                        <span>LangChain</span>
+                        <span>OpenAI API</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Statistics Dashboard -->
+<section class="stats section" id="stats">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-tag">Analytics</span>
+            <h2 class="section-title">Statistics <span class="text-gradient">Dashboard</span></h2>
+            <p class="section-desc">Key metrics and insights about the BSCS program.</p>
+        </div>
+        <div class="stats-dashboard">
+            <div class="stats-cards">
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i data-lucide="users"></i>
+                    </div>
+                    <div class="stat-info">
+                        <span class="stat-value" data-count="12000">0</span>
+                        <span class="stat-desc">Active Students</span>
+                    </div>
+                    <div class="stat-trend positive">
+                        <i data-lucide="trending-up"></i>
+                        <span>+12%</span>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i data-lucide="book-open"></i>
+                    </div>
+                    <div class="stat-info">
+                        <span class="stat-value" data-count="85">0</span>
+                        <span class="stat-desc">Core Courses</span>
+                    </div>
+                    <div class="stat-trend positive">
+                        <i data-lucide="trending-up"></i>
+                        <span>+5%</span>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i data-lucide="briefcase"></i>
+                    </div>
+                    <div class="stat-info">
+                        <span class="stat-value" data-count="96">0</span>
+                        <span class="stat-desc">% Placement Rate</span>
+                    </div>
+                    <div class="stat-trend positive">
+                        <i data-lucide="trending-up"></i>
+                        <span>+3%</span>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i data-lucide="building-2"></i>
+                    </div>
+                    <div class="stat-info">
+                        <span class="stat-value" data-count="150">0</span>
+                        <span class="stat-desc">Industry Partners</span>
+                    </div>
+                    <div class="stat-trend positive">
+                        <i data-lucide="trending-up"></i>
+                        <span>+18%</span>
+                    </div>
+                </div>
+            </div>
+            <div class="charts-row">
+                <div class="chart-panel">
+                    <h3>Enrollment Trends</h3>
+                    <div class="chart-wrap">
+                        <canvas id="enrollmentChart"></canvas>
+                    </div>
+                </div>
+                <div class="chart-panel">
+                    <h3>Skills Distribution</h3>
+                    <div class="chart-wrap">
+                        <canvas id="skillsChart"></canvas>
+                    </div>
+                </div>
+            </div>
+            <div class="charts-row">
+                <div class="chart-panel wide">
+                    <h3>Career Outcomes</h3>
+                    <div class="chart-wrap">
+                        <canvas id="careerChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Resources Section -->
+<section class="resources section" id="resources">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-tag">Study Materials</span>
+            <h2 class="section-title">Notes & <span class="text-gradient">Resources</span></h2>
+            <p class="section-desc">Curated learning materials for every semester.</p>
+        </div>
+        <div class="resources-grid">
+            <div class="resource-card">
+                <div class="resource-icon">
+                    <i data-lucide="file-text"></i>
+                </div>
+                <h3>Programming Notes</h3>
+                <p>Complete C++, Java, and Python programming guides with examples.</p>
+                <a href="#" class="resource-link">
+                    <span>Download PDF</span>
+                    <i data-lucide="download"></i>
+                </a>
+            </div>
+            <div class="resource-card">
+                <div class="resource-icon">
+                    <i data-lucide="book"></i>
+                </div>
+                <h3>Data Structures</h3>
+                <p>Visual explanations of arrays, trees, graphs, and algorithm analysis.</p>
+                <a href="#" class="resource-link">
+                    <span>Download PDF</span>
+                    <i data-lucide="download"></i>
+                </a>
+            </div>
+            <div class="resource-card">
+                <div class="resource-icon">
+                    <i data-lucide="database"></i>
+                </div>
+                <h3>Database Guide</h3>
+                <p>SQL reference, normalization rules, and ER diagram tutorials.</p>
+                <a href="#" class="resource-link">
+                    <span>Download PDF</span>
+                    <i data-lucide="download"></i>
+                </a>
+            </div>
+            <div class="resource-card">
+                <div class="resource-icon">
+                    <i data-lucide="globe"></i>
+                </div>
+                <h3>Web Dev Handbook</h3>
+                <p>Frontend and backend development cheatsheets and best practices.</p>
+                <a href="#" class="resource-link">
+                    <span>Download PDF</span>
+                    <i data-lucide="download"></i>
+                </a>
+            </div>
+            <div class="resource-card">
+                <div class="resource-icon">
+                    <i data-lucide="brain"></i>
+                </div>
+                <h3>AI & ML Notes</h3>
+                <p>Machine learning algorithms, neural networks, and deep learning basics.</p>
+                <a href="#" class="resource-link">
+                    <span>Download PDF</span>
+                    <i data-lucide="download"></i>
+                </a>
+            </div>
+            <div class="resource-card">
+                <div class="resource-icon">
+                    <i data-lucide="shield"></i>
+                </div>
+                <h3>Cybersecurity</h3>
+                <p>Security fundamentals, cryptography, and ethical hacking basics.</p>
+                <a href="#" class="resource-link">
+                    <span>Download PDF</span>
+                    <i data-lucide="download"></i>
+                </a>
+            </div>
+        </div>
+        <div class="books-section">
+            <h3 class="books-title">Recommended Books</h3>
+            <div class="books-grid">
+                <div class="book-item">
+                    <div class="book-cover">
+                        <i data-lucide="book-open"></i>
+                    </div>
+                    <h4>Introduction to Algorithms</h4>
+                    <span>CLRS</span>
+                </div>
+                <div class="book-item">
+                    <div class="book-cover">
+                        <i data-lucide="book-open"></i>
+                    </div>
+                    <h4>Clean Code</h4>
+                    <span>Robert C. Martin</span>
+                </div>
+                <div class="book-item">
+                    <div class="book-cover">
+                        <i data-lucide="book-open"></i>
+                    </div>
+                    <h4>Design Patterns</h4>
+                    <span>Gang of Four</span>
+                </div>
+                <div class="book-item">
+                    <div class="book-cover">
+                        <i data-lucide="book-open"></i>
+                    </div>
+                    <h4>Database Systems</h4>
+                    <span>Silberschatz</span>
+                </div>
+                <div class="book-item">
+                    <div class="book-cover">
+                        <i data-lucide="book-open"></i>
+                    </div>
+                    <h4>Deep Learning</h4>
+                    <span>Goodfellow</span>
+                </div>
+                <div class="book-item">
+                    <div class="book-cover">
+                        <i data-lucide="book-open"></i>
+                    </div>
+                    <h4>Computer Networks</h4>
+                    <span>Tanenbaum</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FAQ Section -->
+<section class="faq section" id="faq">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-tag">Support</span>
+            <h2 class="section-title">Frequently Asked <span class="text-gradient">Questions</span></h2>
+            <p class="section-desc">Common questions about the BSCS program.</p>
+        </div>
+        <div class="faq-list">
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>What are the admission requirements for BSCS?</span>
+                    <i data-lucide="plus" class="faq-icon"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>Applicants need a minimum 60% in FSc Pre-Engineering or equivalent with Mathematics. Entry tests may be required depending on the institution. Some universities also accept ICS and FSc Pre-Medical with additional math courses.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>How long is the BSCS program?</span>
+                    <i data-lucide="plus" class="faq-icon"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>The BSCS is a 4-year degree program consisting of 8 semesters. It typically requires 130-140 credit hours including core courses, electives, and a final year project.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>What programming languages will I learn?</span>
+                    <i data-lucide="plus" class="faq-icon"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>You will learn C++, Java, Python, JavaScript, SQL, and C# throughout the program. Additional languages like PHP, R, and Go may be covered in electives.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>Are there internship opportunities?</span>
+                    <i data-lucide="plus" class="faq-icon"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>Yes, we have partnerships with 150+ tech companies. Students can apply for summer internships after their 4th semester and mandatory internships in the final year.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>What career options are available after BSCS?</span>
+                    <i data-lucide="plus" class="faq-icon"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>Graduates can pursue roles as Software Engineers, Web Developers, AI Engineers, Data Scientists, Cybersecurity Analysts, Cloud Engineers, UI/UX Designers, and more. Many also start their own tech companies.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>Is there a final year project requirement?</span>
+                    <i data-lucide="plus" class="faq-icon"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>Yes, students must complete a capstone project in their final year (2 semesters). Projects can be research-based, industry-sponsored, or entrepreneurial ventures with faculty mentorship.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Testimonials Section -->
+<section class="testimonials section" id="testimonials">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-tag">Success Stories</span>
+            <h2 class="section-title">Student <span class="text-gradient">Testimonials</span></h2>
+            <p class="section-desc">What our graduates say about the program.</p>
+        </div>
+        <div class="testimonials-slider" id="testimonialsSlider">
+            <div class="testimonials-track">
+                <div class="testimonial-card">
+                    <div class="testimonial-quote">
+                        <i data-lucide="quote"></i>
+                    </div>
+                    <p class="testimonial-text">The BSCS program completely transformed my career trajectory. The practical projects and AI specialization helped me land a role at a top tech company within months of graduation.</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i data-lucide="user"></i>
+                        </div>
+                        <div class="author-info">
+                            <h4>Ahmed Khan</h4>
+                            <span>Software Engineer at Google</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-quote">
+                        <i data-lucide="quote"></i>
+                    </div>
+                    <p class="testimonial-text">The curriculum is exceptionally well-designed. From data structures to machine learning, every course built upon the last. I felt prepared for real-world challenges from day one.</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i data-lucide="user"></i>
+                        </div>
+                        <div class="author-info">
+                            <h4>Fatima Ali</h4>
+                            <span>AI Engineer at Microsoft</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-quote">
+                        <i data-lucide="quote"></i>
+                    </div>
+                    <p class="testimonial-text">What sets this program apart is the focus on hands-on learning. The project-based approach and industry mentorship gave me the confidence to launch my own startup.</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i data-lucide="user"></i>
+                        </div>
+                        <div class="author-info">
+                            <h4>Omar Hassan</h4>
+                            <span>Founder, TechVenture</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-quote">
+                        <i data-lucide="quote"></i>
+                    </div>
+                    <p class="testimonial-text">The cybersecurity track was intense and incredibly rewarding. The professors are industry veterans who bring real-world scenarios into every lecture.</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i data-lucide="user"></i>
+                        </div>
+                        <div class="author-info">
+                            <h4>Sana Malik</h4>
+                            <span>Cybersecurity Analyst at Cisco</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-nav">
+                <button class="testimonial-btn prev" id="testPrev"><i data-lucide="chevron-left"></i></button>
+                <button class="testimonial-btn next" id="testNext"><i data-lucide="chevron-right"></i></button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section class="contact section" id="contact">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-tag">Get In Touch</span>
+            <h2 class="section-title">Contact <span class="text-gradient">Us</span></h2>
+            <p class="section-desc">Have questions? Reach out to our admissions team.</p>
+        </div>
+        <div class="contact-layout">
+            <div class="contact-info">
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i data-lucide="map-pin"></i>
+                    </div>
+                    <div class="contact-detail">
+                        <h4>Campus Address</h4>
+                        <p>Computer Science Building, University Road,  Karachi, Pakistan</p>
+                    </div>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i data-lucide="mail"></i>
+                    </div>
+                    <div class="contact-detail">
+                        <h4>Email</h4>
+                        <p>admissions@bscs.edu.pk</p>
+                    </div>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i data-lucide="phone"></i>
+                    </div>
+                    <div class="contact-detail">
+                        <h4>Phone</h4>
+                        <p>+92 3423595 745</p>
+                    </div>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i data-lucide="clock"></i>
+                    </div>
+                    <div class="contact-detail">
+                        <h4>Office Hours</h4>
+                        <p>Mon - Fri: 9:00 AM - 5:00 PM</p>
+                    </div>
+                </div>
+                <div class="contact-social">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i data-lucide="facebook"></i></a>
+                        <a href="#" aria-label="Twitter"><i data-lucide="twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+                        <a href="#" aria-label="Instagram"><i data-lucide="instagram"></i></a>
+                        <a href="#" aria-label="YouTube"><i data-lucide="youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-form-wrap">
+                <form class="contact-form" id="contactForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" placeholder="Your name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="your@email.com" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" placeholder="How can we help?" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Your message..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-lg">
+                        <span>Send Message</span>
+                        <i data-lucide="send"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <a href="#" class="footer-logo">
+                    <i data-lucide="cpu"></i>
+                    <span>BSCS</span>
+                </a>
+                <p>Empowering the next generation of computer scientists with world-class education, research, and innovation.</p>
+                <div class="footer-newsletter">
+                    <h4>Subscribe to Newsletter</h4>
+                    <form class="newsletter-form" id="newsletterForm">
+                        <input type="email" placeholder="Enter your email" required>
+                        <button type="submit"><i data-lucide="arrow-right"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#about">About Program</a></li>
+                    <li><a href="#subjects">Curriculum</a></li>
+                    <li><a href="#roadmap">Academic Roadmap</a></li>
+                    <li><a href="#careers">Careers</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Resources</h4>
+                <ul>
+                    <li><a href="#resources">Study Notes</a></li>
+                    <li><a href="#faq">FAQs</a></li>
+                    <li><a href="#testimonials">Success Stories</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#">Student Portal</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Cookie Policy</a></li>
+                    <li><a href="#">Accessibility</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p> BSCS Program. All rights reserved.</p>
+            <div class="footer-social">
+                <a href="#" aria-label="Facebook"><i data-lucide="facebook"></i></a>
+                <a href="#" aria-label="Twitter"><i data-lucide="twitter"></i></a>
+                <a href="#" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+                <a href="#" aria-label="GitHub"><i data-lucide="github"></i></a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Back to Top Button -->
+<button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i data-lucide="chevron-up"></i>
+</button>
+
+<script src="assets/js/script.js"></script>
+</body>
+</html>
