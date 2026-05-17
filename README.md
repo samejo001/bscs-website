@@ -1,3 +1,11 @@
+# 🚀 BSCS Website
+
+![GitHub repo size](https://img.shields.io/github/repo-size/samejo001/bscs-website)
+![GitHub stars](https://img.shields.io/github/stars/samejo001/bscs-website)
+![License](https://img.shields.io/github/license/samejo001/bscs-website)
+
+---
+
 # BSCS — Bachelor of Science in Computer Science
 
 A premium, world-class website for the Bachelor of Science in Computer Science program. Built with modern web technologies, featuring interactive data visualization, dark/light mode, responsive design, and a comprehensive curriculum explorer.
