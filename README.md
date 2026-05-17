@@ -1,10 +1,10 @@
 # 🚀 BSCS Website
 
-![GitHub repo size](https://img.shields.io/github/repo-size/samejo001/bscs-website)
-![GitHub stars](https://img.shields.io/github/stars/samejo001/bscs-website)
-![License](https://img.shields.io/github/license/samejo001/bscs-website)
-
----
+<p align="center">
+  <img src="https://img.shields.io/github/repo-size/samejo001/bscs-website" />
+  <img src="https://img.shields.io/github/stars/samejo001/bscs-website" />
+  <img src="https://img.shields.io/github/license/samejo001/bscs-website" />
+</p>
 
 # BSCS — Bachelor of Science in Computer Science
 
